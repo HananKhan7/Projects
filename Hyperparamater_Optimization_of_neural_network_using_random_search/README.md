@@ -1,8 +1,9 @@
-# Project Low-Context Word Predictions
+# Hyperparameter Optimization of a neural network model using random search
 
 ## Introduction
-The goal of this project was to use BERT (Fine-tuned) in order to implement low context word prediction on a set of cloze test dataset which was pre processed. 
-## Pre-processing
+Hyper parameter optimization is the process of for finding the best hyperparameters for a NN model with respect to a certain dataset. There is no direct way of finding the optimal hyperparameters with respect to a given dataset. Finding the best hyperparameters can be tedious if done by hit and trial method. This random search implementation finds the optimal hyperparameters for with respect to a given dataset by comparing the mean absolute error scores from multiple NN configurations.
+## Flow diagram
+
 
 ### Original Dataset
 The dataset used for this project is a large-scale human created cloze test dataset named CLOTH which is collected from English exams. Questions in the dataset are designed by middle-school and high-school teachers to prepare Chinese students for entrance exams with missing blanks carefully created by teachers and candidate choices purposely designed to be nuanced. The dataset can be found at <https://github.com/qizhex/Large-scale-Cloze-Test-Dataset-Created-by-Teachers>
