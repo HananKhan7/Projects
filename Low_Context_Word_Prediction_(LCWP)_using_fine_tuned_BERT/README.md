@@ -74,12 +74,9 @@ More details about the evaluation process can be found in *BERT_evaluation_ndcg.
 ### Result
 NDCG results obtained from the three approaches, for both normal and fine-tuned BERT, can be seen below in the form of bar charts.
 #### Percentage approach
-Please click *ScreenShot* to open the chart 
 ![ScreenShot](https://github.com/HananKhan7/Projects/blob/main/Low_Context_Word_Prediction_(LCWP)_using_fine_tuned_BERT/Outputs/percentage_type_evaluation.jpg)
 #### Threshold approach
-Please click *ScreenShot* to open the chart
 ![ScreenShot](https://github.com/HananKhan7/Projects/blob/main/Low_Context_Word_Prediction_(LCWP)_using_fine_tuned_BERT/Outputs/threshold_type_evaluation.jpg)
 #### Logarithimic approach
-Please click *ScreenShot* to open the chart
 ![ScreenShot](https://github.com/HananKhan7/Projects/blob/main/Low_Context_Word_Prediction_(LCWP)_using_fine_tuned_BERT/Outputs/logarithmic_type_evaluation.jpg)
 
