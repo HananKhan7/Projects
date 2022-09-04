@@ -8,6 +8,8 @@ Figure below shows the process for finding the optimal hyperparameters.
 - Since there are multiple configurations that the model will check, It is ideal to create to check for repetitions, in order to only generate unique configurations.
 - Model is trained on the same HP configuration multiple times in order to check model variance and consistency of the configuration itself.
 - MAE (Mean absolute error) scores of all the generated configurations are appended in a single excel sheet, which is also used to check for repetitions. 
+- All generated models are saved in a seperate folder along with their weights, automatically.
+- From the final output excel sheet, model with the best MAE score can be chosen and the hyperparameters can be selected from that model.
 
 ![ScreenShot](https://github.com/HananKhan7/Projects/blob/main/Hyperparamater_Optimization_of_neural_network_using_random_search/plots/Flow_diagram.png)
 
