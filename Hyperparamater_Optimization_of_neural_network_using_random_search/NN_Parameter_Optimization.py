@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.utils import shuffle
 import os
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'            # To suppress tensorflow warnings
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'            # To suppress tensorflow initial warnings
 import tensorflow as tf
 import random
 from tqdm import tqdm
