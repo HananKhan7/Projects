@@ -1,10 +1,10 @@
+# Importing Libraries
 import json
 import torch
 from tqdm import tqdm
 from transformers import BertTokenizer, BertForMaskedLM
 from torch.nn import functional as F
 import pickle
-import os
 def load_data_and_convert_to_Json(file_path:str)-> list:
     """
     This function loads the queries and converts them to Json format
