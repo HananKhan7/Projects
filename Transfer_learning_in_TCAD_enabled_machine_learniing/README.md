@@ -5,13 +5,16 @@ Transfer learning stands for utilizing feature representations from a pre-traine
 
 ## Implementation
 ### Base model
-- explaining how to get base model (Highly optimized model)
+- explaining how to get base model (Highly optimized model).
+
 ![ScreenShot](https://github.com/HananKhan7/Projects/blob/main/Transfer_learning_in_TCAD_enabled_machine_learniing/plots/transfer_learning_general.png)
 ### Weight vectors
 - explaining mathematical rep, how hidden layer node values/ weight vectors are achieved.
+
 ![ScreenShot](https://github.com/HananKhan7/Projects/blob/main/Transfer_learning_in_TCAD_enabled_machine_learniing/plots/hidden_layer_mathematical_explanation.png)
 ### Setting up features/inputs
 - explaining adding & removing features.
+
 ![ScreenShot](https://github.com/HananKhan7/Projects/blob/main/Transfer_learning_in_TCAD_enabled_machine_learniing/plots/Adding_removing_feature.png)
 ### Training process
 #### Freezing weights
@@ -22,5 +25,5 @@ Transfer learning stands for utilizing feature representations from a pre-traine
 - finetuning
 
 ![ScreenShot](https://github.com/HananKhan7/Projects/blob/main/Transfer_learning_in_TCAD_enabled_machine_learniing/plots/unfreezing_weights.png)
-### Result
+### Results
 - explain overall improvement in performant (~25% in MAE).

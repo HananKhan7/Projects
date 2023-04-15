@@ -3,7 +3,8 @@
 ## Introduction
 Hyper parameter optimization is the process of for finding the best hyperparameters for a NN model with respect to a certain dataset. Finding the best hyperparameters can be tedious if done by hit and trial method. Automated hyper parameter optimization is conducted in this project, using a combination of random and bayesian optimization search.
 ## Flow diagram
-ADD PLOTS WITH DESCRIPTION AS IN TL PROJECT. 
+ADD PLOTS WITH DESCRIPTION AS IN TL PROJECT.
+ 
 Figure below shows the process for finding the optimal hyperparameters.
 - The model starts off with random search.
 - Based on the defined search space, model creates a configuraion.
