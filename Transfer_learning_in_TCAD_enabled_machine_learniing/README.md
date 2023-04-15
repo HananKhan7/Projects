@@ -16,9 +16,11 @@ Transfer learning stands for utilizing feature representations from a pre-traine
 ### Training process
 #### Freezing weights
 - to retain transfered info of features.
+
 ![ScreenShot](https://github.com/HananKhan7/Projects/blob/main/Transfer_learning_in_TCAD_enabled_machine_learniing/plots/freezing_weights.png)
 #### Un-freezing weights
 - finetuning
+
 ![ScreenShot](https://github.com/HananKhan7/Projects/blob/main/Transfer_learning_in_TCAD_enabled_machine_learniing/plots/unfreezing_weights.png)
 ### Result
 - explain overall improvement in performant (~25% in MAE).
