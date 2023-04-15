@@ -1,5 +1,4 @@
-# Projects
-Welcome! :smiley:
+Welcome! :smile:
 
 My name is Hanan, and I am a Digital engineer. This repository consists of some of many projects that I have worked on, in the field of machine learning and natural language processing. These are listed below.
 
