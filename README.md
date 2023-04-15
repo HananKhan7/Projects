@@ -1,6 +1,6 @@
 Welcome! :smile:
 
-My name is Hanan, and I am a Digital engineer. This repository consists of some of many projects that I have worked on, in the field of machine learning and natural language processing. These are listed below.
+My name is Hanan, and I am a Digital engineer. This repository consists of some of many projects that I have worked on, in the field of machine learning and natural language processing, which are listed below.
 
 - Automated Hyper parameter optimization for an artifical neural network using random and bayesian optimization search.
 - Transfer learning in TCAD enabled machine learning.
