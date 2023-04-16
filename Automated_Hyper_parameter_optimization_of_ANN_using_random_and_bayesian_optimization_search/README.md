@@ -17,12 +17,12 @@ Figure below shows the process for finding the optimal hyperparameters.
 - All generated models are saved in a seperate folder along with their weights,scalers and random seeds, automatically.
 - Final output contains a group of high performing model configurations.
 
-![ScreenShot](https://github.com/HananKhan7/Projects/blob/main/Automated_Hyper_parameter_optimization_of_ANN_using_random_and_bayesian_optimization_search/plots/Flow_diagram.png)
+![ScreenShot](https://github.com/HananKhan7/Projects/blob/main/Automated_Hyper_parameter_optimization_of_ANN_using_random_and_bayesian_optimization_search/extra/Flow_diagram.png)
 
 ## Output
-![ScreenShot](https://github.com/HananKhan7/Projects/blob/main/Automated_Hyper_parameter_optimization_of_ANN_using_random_and_bayesian_optimization_search/plots/Excel%20output.png)
+![ScreenShot](https://github.com/HananKhan7/Projects/blob/main/Automated_Hyper_parameter_optimization_of_ANN_using_random_and_bayesian_optimization_search/extra/Excel%20output.png)
 
-![ScreenShot](https://github.com/HananKhan7/Projects/blob/main/Automated_Hyper_parameter_optimization_of_ANN_using_random_and_bayesian_optimization_search/plots/hl_score_plot.png)
+![ScreenShot](https://github.com/HananKhan7/Projects/blob/main/Automated_Hyper_parameter_optimization_of_ANN_using_random_and_bayesian_optimization_search/extra/hl_score_plot.png)
 
-![ScreenShot](https://github.com/HananKhan7/Projects/blob/main/Automated_Hyper_parameter_optimization_of_ANN_using_random_and_bayesian_optimization_search/plots/box%20plot.png)
+![ScreenShot](https://github.com/HananKhan7/Projects/blob/main/Automated_Hyper_parameter_optimization_of_ANN_using_random_and_bayesian_optimization_search/extra/box%20plot.png)
 
