@@ -33,4 +33,4 @@ After the first training process, transferred feature weight vectors are unfroze
 ### Results
 With the help of transfer learning, ML models were able to perform with the same accuracy as before but with 50 % of the training data required as compared to the standard training procedure. This was quite beneficial, as training data required to create a digital twin of a semiconductor device is computationally expensive.
 
-![ScreenShot](https://github.com/HananKhan7/Projects/blob/main/Transfer_learning_in_TCAD_enabled_machine_learniing/plots/TL_results.png)
+![ScreenShot](https://github.com/HananKhan7/Projects/blob/main/Transfer_learning_in_TCAD_enabled_machine_learniing/plots/TL_result.png)
