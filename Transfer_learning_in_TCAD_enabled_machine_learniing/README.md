@@ -2,6 +2,7 @@
 
 ## Introduction
 Transfer learning stands for utilizing feature representations from a pre-trained model so that we do not have to train a new model from scratch, and it comes in handy when we do not have a huge data set. 
+
 In this project, Transfer learning was used to aid in the training process (reduce the amount of training data required), by transferring device physics from a highly trained ML model/ Digital twin of one semiconductor device to an untrained ML model of another yet similar semiconductor device.
 ## Implementation
 ### Base model
