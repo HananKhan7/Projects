@@ -1,6 +1,10 @@
 # Transfer learning in TCAD enabled machine learning
 
 ## Introduction
+### TCAD
+In order to aid and improve the development of semiconductor devices, Technology Computer-Aided Design (TCAD) exists. TCAD refers to the use of computer simulations to develop and optimize semiconductor manufacturing. These simulation results serve as training and test data for a ML model which, once trained and optimized, serves as a digital twin which can be used to predict outputs/electrical parameters based on given input data/Device features, and perform various testing and evaluation resulting in higher design accuracy, improvement in performance as well as reduction in time and cost.
+
+### Transfer learning
 Transfer learning stands for utilizing feature representations from a pre-trained model so that we do not have to train a new model from scratch, and it comes in handy when we do not have a huge data set. 
 
 In this project, Transfer learning was used to aid in the training process (reduce the amount of training data required), by transferring device physics from a highly trained ML model/ Digital twin of one semiconductor device to an untrained ML model of another yet similar semiconductor device.
