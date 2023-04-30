@@ -37,46 +37,7 @@ def data_import_and_shuffle(filepath:str):
     data = data.dropna()
     if ('Unnamed: 0' in data):			# Remove unnecessary data
         data = shuffle(data.drop(columns = ['Unnamed: 0']))
-    # Using log10 for 'Idoff_sv' and 'Isoff_sv' labels
-    for i in range(len(data['Idoff_sv'].values)):
-        data['Idoff_sv'].values[i] = math.log10(data['Idoff_sv'].values[i]) 
-        data['Isoff_sv'].values[i] = math.log10(data['Isoff_sv'].values[i])
     return data
- 
-# # Data preprocessing
-# def data_preprocessing(TCAD_data:pd.core.frame.DataFrame, evaluation_data:pd.core.frame.DataFrame, axial_data:pd.core.frame.DataFrame, no_training_data:int ,features: list,labels: list):
-	# """
-	# This method preprocesses the data and generates scaled training and testing datasets 
-	# """
-	# # Setting and saving random seed
-	# seed = random.randint(1,2000)
-	# tf.random.set_seed(seed)
-	# # Removing evaluation data from TCAD_data ------> Training data, which is further narrowed down to the number of training samples.
-	# # Removing duplicates by 'ctrlstr' column
-	# training_data = TCAD_data.copy()
-	# duplicate_index = TCAD_data['ctrlstr'].isin(evaluation_data['ctrlstr'])
-	# training_data.drop(training_data[duplicate_index].index, inplace = True)
-	# for i in range(len(axial_data)):
-		# if axial_data['ctrlstr'].iloc[i] == 'axes_100045':
-			# target_index = i
-	# X = pd.concat([axial_data[features],training_data[features]], ignore_index=True, sort=False)
-	# #X = self.data[self.features]
-	# Y = pd.concat([axial_data[labels],training_data[labels]], ignore_index=True, sort=False)
-	# # Splitting data into training and testing data
-	# #X_train, X_test, Y_train, Y_test = train_test_split(X,Y,test_size = 0.2,random_state =28)
-	# X_train = pd.concat([axial_data[features],training_data.iloc[0:no_training_data][features]], ignore_index=True, sort=False)
-	# Y_train = pd.concat([axial_data[labels],training_data.iloc[0:no_training_data][labels]], ignore_index=True, sort=False)
-	# X_test = evaluation_data[features]
-	# Y_test = evaluation_data[labels]
-	# sc = StandardScaler()
-	# sc_output = StandardScaler()
-	# X_train = sc.fit_transform(X_train.values)
-	# X_test = sc.transform(X_test.values)
-	# Y_train = sc_output.fit_transform(Y_train.values)
-	# Y_test = sc_output.transform(Y_test.values)
-	# # We dont apply fit method to the test data so that the model does not compute mean standard deviation
-	# # of the test dataset during training
-	# return seed, training_data, X_train, X_test, Y_train, Y_test, sc, sc_output, target_index
 
 def output_label_gen(labels):
     """
@@ -97,11 +58,10 @@ def output_score_format(scores):
     parameter: Percentage and absoulte difference scores for each label
 
     This method is used to set the format/order of the scores to a more presentable one.
-    e.g : Output ---> Idsat_%, Idsat_abs, Idlin_%, Idlin_abs,....
+    e.g : Output ---> current_%, current_abs, voltage_%, voltage_abs,....
     """
     percentage_score = scores[0]
     abs_score = scores[1]
-    error_std = scores[2]
     output_scores = []
     for i in range(len(percentage_score)):
         output_scores.append(percentage_score[i])
@@ -123,7 +83,6 @@ def output_to_excel(list_of_data:list, output_path:str):
     df["Number of hidden layers"] = list_of_data[0]
     df["Number of neurons"] = list_of_data[1]
     df["Norm_MAE_avg"] = list_of_data[2][2]
-    #df["Norm_MSE_avg"] = list_of_data[2][2][0]
     for i in range(len(output_labels)):        # For total number of scores
         df[output_labels[i]] = output_scores[i]
     df["Average runtime per training (min)"] = list_of_data[4]
@@ -263,8 +222,6 @@ class Aritificial_NN_PO:
             percentage_error_per_label = []
             absolute_error_per_label = []
             for row_number in range(true_values.shape[0]):
-                # if true_values[row_number][i] != 0 and pred_values_transform[row_number][i] != 0:
-                # percentage_error_per_label.append(abs(true_values[row_number][i] - pred_values_transform[row_number][i])/((true_values[row_number][i] + pred_values_transform[row_number][i])/2)*100)
                 percentage_error_per_label.append(abs(true_values[row_number][i] - pred_values_transform[row_number][i])/(target_value_transform[self.target_index][i])*100)
                 absolute_error_per_label.append(abs(true_values[row_number][i] - pred_values_transform[row_number][i]))
             if i == self.labels.index('Idsat_sv') or i == self.labels.index('Idlin_sv') or i == self.labels.index('Ideff_sv') or i == self.labels.index('Vtsat_sv') or i == self.labels.index('Vtlin_sv') or i == self.labels.index('DIBL_sv'):

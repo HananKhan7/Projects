@@ -70,11 +70,12 @@ def data_preprocessing(TCAD_data:pd.core.frame.DataFrame, evaluation_data:pd.cor
 	# Setting and saving random seed
 	seed = random.randint(1,2000)
 	tf.random.set_seed(seed)
-	# Removing evaluation data from TCAD_data ------> Training data, which is further narrowed down to the number of training samples.
+	# Removing evaluation data from data ------> Training data, which is further narrowed down to the number of training samples.
 	# Removing duplicates by 'ctrlstr' column
 	training_data = TCAD_data.copy()
 	duplicate_index = TCAD_data['ctrlstr'].isin(evaluation_data['ctrlstr'])
 	training_data.drop(training_data[duplicate_index].index, inplace = True)
+    # Finding target value for relative error calculations
 	for i in range(len(axial_data)):
 		if axial_data['ctrlstr'].iloc[i] == 'axes_100045':
 			target_index = i
