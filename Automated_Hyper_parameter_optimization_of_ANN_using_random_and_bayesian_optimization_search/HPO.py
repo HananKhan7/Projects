@@ -19,7 +19,6 @@ import multiprocessing as mp
 import time
 import sys
 import statistics
-import os.path
 import pickle
 from tensorflow.keras.callbacks import EarlyStopping
 import csv
