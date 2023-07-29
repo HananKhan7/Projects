@@ -26,10 +26,13 @@ Based on the use case, weight vectors of features that are common between base a
 Initially in the training process, transferred weight vectors from base model are frozen, while new feature weight vectors are left untouched. This allows the ML model to specifically train and learn weight vectors of new features w.r.t the rest of transferred feature weight vectors, without altering transferred feature weight vectors. 
 
 ![ScreenShot](https://github.com/HananKhan7/Projects/blob/main/Transfer_learning_in_TCAD_enabled_machine_learniing/extra/freezing_weights.png)
-#### Un-freezing weights
+#### Fine tuning (Un-freezing weights)
 After the first training process, transferred feature weight vectors are unfrozen, and with a low learning rate, training process is repeated. This allows fine tuning and re calibration.
 
 ![ScreenShot](https://github.com/HananKhan7/Projects/blob/main/Transfer_learning_in_TCAD_enabled_machine_learniing/extra/unfreezing_weights.png)
+#### Optimizer
+An optimizer ensures that the least amount of training data is used during fine tuninig. Initially, the optimizer selects the maximum amount of training data available. The optimizer on each iteration reduces the amount of training data by a defined step size value followed by training and evaluation of the ML model. It keeps on reducing the training data on each iteration until the ML model fails the evaluation criteria. After reaching failure, the optimizer selects the ML model from its previous iteration which just passed the evaluation criteria.
+
 ### Results
 With the help of transfer learning, ML models were able to perform with the same accuracy as before but with 50 % of the training data required as compared to the standard training procedure. This was quite beneficial, as training data required to create a digital twin of a semiconductor device is computationally expensive.
 
