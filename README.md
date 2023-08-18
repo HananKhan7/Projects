@@ -1,4 +1,4 @@
-Welcome! :smile:
+Hi! :smile:
 
 Welcome to my data science portfolio. I'm Hanan, a passionate data scientist with almost 2 years of experience in leveraging data to extract insights and drive informed decisions using the power of ML algorithms.
 
