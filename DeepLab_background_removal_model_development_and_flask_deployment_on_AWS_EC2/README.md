@@ -1,4 +1,4 @@
-# "DeepLabV3 Background Removal: Model Development and Flask Deployment on AWS EC2
+# DeepLabV3 Background Removal: Model Development and Flask Deployment on AWS EC2
 
 ## Introduction
 This project demonstrates the use of DeepLabV3, a state-of-the-art deep learning model, for background removal in images. The model is trained to accurately segment the foreground object from the background, resulting in a transparent background. Additionally, the project showcases the deployment of the model using Flask on an AWS EC2 instance.
