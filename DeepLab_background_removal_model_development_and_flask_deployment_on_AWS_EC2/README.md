@@ -21,7 +21,7 @@ Background removal is a common preprocessing step in image editing and computer 
 
 ### Running locally
 - Run the Flask app locally:
-```python 
+```bash 
 python main.py
 ```
 - Postman API platform can be used for API calls.
