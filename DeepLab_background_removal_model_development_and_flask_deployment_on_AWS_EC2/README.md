@@ -21,9 +21,9 @@ Background removal is a common preprocessing step in image editing and computer 
 
 ### Running locally
 - Run the Flask app locally:
-'''python
+```python 
 python main.py
-'''
+```
 - Postman API platform can be used for API calls.
 - The final foreground image is stored in './final image/final_foreground_image.jpg'
 
