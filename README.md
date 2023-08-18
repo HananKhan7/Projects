@@ -11,9 +11,10 @@ Welcome to my data science portfolio. I'm Hanan, a passionate data scientist wit
 Here are a few projects that showcase my skills and expertise:
 
 - Automated Hyper parameter optimization for an artifical neural network using a combination of random and bayesian optimization search.
-- Transfer learning in TCAD enabled machine learning.
+- DeepLabV3 Background Removal: Model Development and Flask Deployment on AWS EC2
 - Low Context Word Prediction (LCWP) using fine tuned BERT.
 - N-gram model sentence prediction.
+- Transfer learning in TCAD enabled machine learning.
 
 ## Contact Me
 
