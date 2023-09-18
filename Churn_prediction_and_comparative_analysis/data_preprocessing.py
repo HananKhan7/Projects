@@ -11,6 +11,7 @@ def data_preprocessing(path:str):
     with open(path) as f:
         lines = f.readlines()
     entries = []
+
     for i in range(len(lines)):
         temp_string = re.sub(r',(\d)\t', r'\t\1', lines[i])         # Fix "," issue found in "installs.txt"
         entries.append(temp_string.replace("\n",""))       # Removing "\n" from the end of each row
@@ -18,18 +19,22 @@ def data_preprocessing(path:str):
     data_columns = entries[0].split('\t')      # Seperating column names by '\'
     col_values = [[] for _ in data_columns]      # Creating lists to store column entries
     data_dict = {}
+
     for i in range(1,len(entries)):
         split = entries[i].split('\t')             # Splitting values by '\'
+
         for j in range(len(col_values)):
             col_values[j].append(split[j])
+
     for column_index in range(len(data_columns)):         # Creating dictionary to store column values by column names
         data_dict[data_columns[column_index]] = col_values[column_index]
     df = pd.DataFrame(data_dict)    
+
     return df
 
 def normalizing_date(date_series:pd.core.series.Series,column_name:str):
     """
-    This method updates the date format and outputs the difference from current date (2023-8-11), in days.
+    This method updates the date format and outputs the difference from current date, in days.
     """
     current_date = datetime.today()
     date_formatted = pd.to_datetime(date_series[column_name], format='%Y-%m-%d %H:%M:%S.%f0')
@@ -44,7 +49,7 @@ brochure_views_df = data_preprocessing('dataset/brochure views.txt')
 installs_df = data_preprocessing('dataset/installs.txt')
 
 # merging relevant data into one dataframe
-brochure_views_combined = pd.concat([brochure_views_df,brochure_views_july_df]).drop_duplicates()       #combining brochure views entries
+brochure_views_combined = pd.concat([brochure_views_df,brochure_views_july_df]).drop_duplicates()       #combining brochure views' entries
 installs_df = installs_df.drop('id', axis=1)                                                            # Removing 'id' to allow merging using 'userId'
 final_df = pd.merge(brochure_views_combined, installs_df, on='userId')                                  # Merging into one dataframe for predicting churn propensity
 final_df['dateCreated'] = normalizing_date(final_df,'dateCreated')                                      # Formatting time in terms of difference in days.
