@@ -5,7 +5,7 @@
 This project focuses on predicting customer churn using K-Means Clustering for customer segmentation and evaluating the performance of various classification models, including Artificial Neural Networks (ANN), Random Forest, and Support Vector Machines (SVM). Churn prediction is a critical task in customer retention and business management, and this project aims to provide valuable insights and tools for decision-making.
 
 ## Table of Contents
-- [Prerequisites] (#prerequisites)
+- [Prerequisites](#prerequisites)
 - [Methodology](#methodology)
 - [Dataset](#dataset)
 - [Installation](#installation)
