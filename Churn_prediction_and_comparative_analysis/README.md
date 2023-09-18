@@ -42,7 +42,7 @@ The preprocessing step is used to remove any abnormalities existing in the data,
 - This step is used to initially summarize the data.
 ![ScreenShot](https://github.com/HananKhan7/Projects/blob/main/Churn_prediction_and_comparative_analysis/plots/Histograms_relevant_variables.png)
 
-- Discard variables irrelevant in predicting churn, such as:
+- Next step is to discard variables irrelevant in predicting churn, such as:
     - ID
     - userID
     - brochure ID
@@ -50,17 +50,28 @@ The preprocessing step is used to remove any abnormalities existing in the data,
     - model
     - campaign ID
 
+### Predicting churn
+An unsupervised machine learning is utilized to calculate and predict churn. This is implemented using KMeans clustering. The correct number of clusters to used is recognized using the elbow method.
+![ScreenShot](https://github.com/HananKhan7/Projects/blob/main/Churn_prediction_and_comparative_analysis/plots/Elbow_method_for_kmeans.png)
+Based on the elbow method, Churn is classified into three types.
+- High risk
+- Mid risk
+- low risk
+![ScreenShot](https://github.com/HananKhan7/Projects/blob/main/Churn_prediction_and_comparative_analysis/plots/Histogram_churn_count.png)
+Further data analysis is done using histogram to visualy identify the soundness of KMeans churn prediction.
+![ScreenShot](https://github.com/HananKhan7/Projects/blob/main/Churn_prediction_and_comparative_analysis/plots/Histograms_date_created.png)
 
-## Dataset
+![ScreenShot](https://github.com/HananKhan7/Projects/blob/main/Churn_prediction_and_comparative_analysis/plots/Histograms_install_date.png)
 
-Describe the dataset used in the project. Include information about its source, structure, and any preprocessing steps performed on the data. You can also provide a link to the dataset if it's publicly available.
+![ScreenShot](https://github.com/HananKhan7/Projects/blob/main/Churn_prediction_and_comparative_analysis/plots/Histograms_page_turn_count.png)
 
-## Installation
+![ScreenShot](https://github.com/HananKhan7/Projects/blob/main/Churn_prediction_and_comparative_analysis/plots/Histograms_view_duration.png)
 
-Explain how to set up the project environment and install any necessary dependencies. You can include code snippets or a step-by-step guide to help users get started.
+## Validation using classification models
 
-```shell
-# Example installation steps
-git clone https://github.com/yourusername/churn-prediction-project.git
-cd churn-prediction-project
-pip install -r requirements.txt
+The results from KMeans with respect to churn prediction are further validated using the following models.
+- Artificial neural network
+- Random forest classifier
+- Support vector machine classifier
+
+The classification reports as well as the confusion matrix generated from these models can be seen in "evaluation_results" folder.
