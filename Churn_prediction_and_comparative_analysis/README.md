@@ -50,13 +50,18 @@ The preprocessing step is used to remove any abnormalities existing in the data,
 
 ### Predicting churn
 An unsupervised machine learning is utilized to calculate and predict churn. This is implemented using KMeans clustering. The correct number of clusters to used is recognized using the elbow method.
+
 ![ScreenShot](https://github.com/HananKhan7/Projects/blob/main/Churn_prediction_and_comparative_analysis/plots/Elbow_method_for_kmeans.png)
+
 Based on the elbow method, Churn is classified into three types.
 - High risk
 - Mid risk
 - low risk
+
 ![ScreenShot](https://github.com/HananKhan7/Projects/blob/main/Churn_prediction_and_comparative_analysis/plots/Histogram_churn_count.png)
+
 Further data analysis is done using histogram to visualy identify the soundness of KMeans churn prediction.
+
 ![ScreenShot](https://github.com/HananKhan7/Projects/blob/main/Churn_prediction_and_comparative_analysis/plots/Histograms_date_created.png)
 
 ![ScreenShot](https://github.com/HananKhan7/Projects/blob/main/Churn_prediction_and_comparative_analysis/plots/Histograms_install_date.png)
