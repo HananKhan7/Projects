@@ -4,7 +4,7 @@ Welcome to my data science portfolio. I'm Hanan, a passionate data scientist wit
 
 ## About Me
 - 📊 Data scientist with a keen interest in exploratory data analysis, machine learning, and predictive modeling.
-- 📈 Skilled in Python, R, and SQL, with experience in data manipulation, visualization, and statistical analysis.
+- 📈 Skilled in Python, R, and SQL, with experience in data manipulation, visualization, ML model generation, and statistical analysis.
 - 💡 Continuously curious and always exploring new techniques and tools to enhance data-driven solutions.
 
 ## Portfolio Highlights
