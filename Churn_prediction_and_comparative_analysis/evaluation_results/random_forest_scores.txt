@@ -1,0 +1,27 @@
+ACCURACY SCORE
+
+model accuracy: 0.9935
+
+
+CLASSIFICATION REPORT 
+
+
+
+               precision    recall  f1-score   support
+
+    low Risk       0.98      0.98      0.98      9119
+    Mid Risk       1.00      1.00      1.00     19563
+   High Risk       1.00      1.00      1.00     22329
+
+    accuracy                           0.99     51011
+   macro avg       0.99      0.99      0.99     51011
+weighted avg       0.99      0.99      0.99     51011
+
+
+CONFUSION MATRIX
+
+
+
+ [[ 8968    67    84]
+ [   64 19494     5]
+ [   78    18 22233]]
