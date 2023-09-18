@@ -7,12 +7,10 @@ This project focuses on predicting customer churn using K-Means Clustering for c
 ## Table of Contents
 - [Prerequisites](#prerequisites)
 - [Methodology](#methodology)
-- [Dataset](#dataset)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Results](#results)
-- [Contributing](#contributing)
-- [License](#license)
+    - [Data preprocessing](#data-preprocessing)
+    - [Exploratory data analysis](#exploratory-data-analysis-eda)
+    - [Predicting churn](#predicting-churn)
+    - [Validation](#validation-using-classification-models)
 
 ## Prerequisites
 - Python prerequisites required for data preprocessing, predicting churn and for the evaluation step are mentioned in "requirements.txt" file.
