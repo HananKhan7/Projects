@@ -42,6 +42,14 @@ The preprocessing step is used to remove any abnormalities existing in the data,
 - This step is used to initially summarize the data.
 ![ScreenShot](https://github.com/HananKhan7/Projects/blob/main/Churn_prediction_and_comparative_analysis/plots/Histograms_relevant_variables.png)
 
+- Discard variables irrelevant in predicting churn, such as:
+    - ID
+    - userID
+    - brochure ID
+    - product ID
+    - model
+    - campaign ID
+
 
 ## Dataset
 
