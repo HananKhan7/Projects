@@ -1,0 +1,48 @@
+Question:
+Which teams played in the NFL Kickoff Game to begin the 2022 season, and what was the result?
+Answer:
+ The Los Angeles Rams fell to Buffalo in the NFL Kickoff Game to begin the 2022 season.
+Source:
+page_content='the 2022 nfl season was the 103rd season of the national football league nfl the season began on september 8 2022 with the defending super bowl lvi champion los angeles rams falling to buffalo in the nfl kickoff game and ended on january 8 2023 the playoffs started on january 14 and concluded with super bowl lvii the leagues championship game at state farm stadium in glendale arizona on february 12 with kansas city defeating philadelphia the former washington redskins after two seasons of using' metadata={'source': 'preprocessed_data\\processed_data.txt'}
+*----------------------------------------------------------------------------*
+
+Question:
+Why was the game between Buffalo and Cincinnati cancelled?
+Answer:
+ The game between Buffalo and Cincinnati was canceled after Buffalo safety Damar Hamlin suffered a nonfatal cardiac arrest on the field of play during Week 17 of the NFL season.
+Source:
+page_content='washington redskins after two seasons of using the placeholder name washington football team were renamed the washington commanders prior to the start of the season2 the week 17 game between buffalo and cincinnati was canceled after buffalo safety damar hamlin suffered a nonfatal cardiac arrest on the field of play it was the first regular season game to be canceled and not rescheduled since the 1987 nflpa players strike3 among the officiating changes in 2022 referee tony corrente retired after' metadata={'source': 'preprocessed_data\\processed_data.txt'}
+*----------------------------------------------------------------------------*
+
+Question:
+What new name was adopted by the former Washington Redskins for the 2022 NFL season?
+Answer:
+ The former Washington Redskins were renamed the Washington Commanders prior to the start of the 2022 NFL season.
+Source:
+page_content='washington redskins after two seasons of using the placeholder name washington football team were renamed the washington commanders prior to the start of the season2 the week 17 game between buffalo and cincinnati was canceled after buffalo safety damar hamlin suffered a nonfatal cardiac arrest on the field of play it was the first regular season game to be canceled and not rescheduled since the 1987 nflpa players strike3 among the officiating changes in 2022 referee tony corrente retired after' metadata={'source': 'preprocessed_data\\processed_data.txt'}
+*----------------------------------------------------------------------------*
+
+Question:
+State the career trajectory of Tra Blake leading up to his promotion to replace Tony Corrente as a referee in the 2022 NFL season.
+Answer:
+ Tra Blake had been a referee in the Alliance of American Football (AAF) in 2019 and in the 2020 version of the XFL before joining the NFL later in 2020.
+Source:
+page_content='in 2022 referee tony corrente retired after 27 seasons in the nfl umpire tra blake was promoted the replace corrente blake had been a referee in the alliance of american football in 2019 and in the 2020 version of the xfl before joining the nfl later in 2020 side judge lo van pham was hired from the big 12 conference becoming the leagues first asianamerican nfl official down judge robin delorenzo became the third female nfl official joining sarah thomas and maia chaka the nfl diversity equity' metadata={'source': 'preprocessed_data\\processed_data.txt'}
+*----------------------------------------------------------------------------*
+
+Question:
+Who was hired as the league's first Asian-American NFL official and from which conference was this individual recruited?
+Answer:
+ Lo Van Pham was hired as the league's first Asian-American NFL official and was recruited from the Big 12 Conference.
+Source:
+page_content='in 2022 referee tony corrente retired after 27 seasons in the nfl umpire tra blake was promoted the replace corrente blake had been a referee in the alliance of american football in 2019 and in the 2020 version of the xfl before joining the nfl later in 2020 side judge lo van pham was hired from the big 12 conference becoming the leagues first asianamerican nfl official down judge robin delorenzo became the third female nfl official joining sarah thomas and maia chaka the nfl diversity equity' metadata={'source': 'preprocessed_data\\processed_data.txt'}
+*----------------------------------------------------------------------------*
+
+Question:
+In regard to the inclusive hiring training announced at the NFL Fall League Meeting on October 18, who is mandated to participate and under what circumstances must this training be undertaken?
+Answer:
+ According to the information provided in the prompt, key decision makers in a head coach or general manager search, including owners, are required to participate in inclusive hiring training prior to the head coach or general manager search. This means that any owner, general manager, or head coach who is involved in the selection process for these positions must complete the training before they can begin their search.
+Source:
+page_content='enhancement and updates to diversity equity and inclusion efforts was announced at the nfl fall league meeting on october 18 key decision makers in a head coach or general manager search including owners are required to participate in inclusive hiring training prior to the head coach or general manager search' metadata={'source': 'preprocessed_data\\processed_data.txt'}
+*----------------------------------------------------------------------------*
+
