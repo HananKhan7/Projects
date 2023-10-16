@@ -1,54 +1,25 @@
-# LLAMA 2 Empowering Question Answering with Efficient Document Retrieval Using FAISS
+Hi! :smile:
 
-This repository contains a powerful Question Answering (QA) system built using the Large Language Model, LLAMA 2. The system is designed to extract accurate and relevant answers from a set of provided local documents. It utilizes FAISS for efficient word embeddings, enabling fast and accurate retrieval of information.
+Welcome to my data science portfolio. I'm Hanan, a passionate data scientist with almost 2 years of experience in leveraging data to extract insights and drive informed decisions using the power of ML algorithms.
 
-## Prerequisites
-- python 3.x
-- The required libraries can be found in the requirement.txt file
+## About Me
+- 📊 Data scientist with a keen interest in exploratory data analysis, machine learning, and predictive modeling.
+- 📈 Skilled in Python, R, and SQL, with experience in data manipulation, visualization, ML model generation, and statistical analysis.
+- 💡 Continuously curious and always exploring new techniques and tools to enhance data-driven solutions.
 
-## Implementation
-The project is available in both a python script and a jupyter notebook file.
+## Portfolio Highlights
+Here are a few projects that showcase my skills and expertise:
 
-It consists of the following main tasks.
-### Data preprocessing
-- The provided article is saved into a .txt format in 'raw_data' folder which is then cleaned up by undergoing the following processes:
-    - Lowercasing
-    - Special characters/HTML links removal
-    - removal of new lines
-- It is then printed into a seperate .txt file placed in the 'preprocessed_data' folder.
+- Automated hyper parameter optimization for an artifical neural network using a combination of random and bayesian optimization search.
+- Churn prediction and comparative analysis: EDA, churn prediction through KMeans clustering, validation through ANN, Random forest, and SVM.
+- DeepLabV3 background removal: model development and flask deployment on AWS EC2
+- Low context word prediction (LCWP) using fine tuned BERT.
+- N-gram model sentence prediction.
+- Transfer learning in TCAD enabled machine learning.
 
-### Word embeddings
-Word embeddings are generated for the preprocessed data using one of the hugging face's most popular sentence transformers **all-mpnet-base-v2** the embeddings are stored in a local database using FAISS.
+## Contact Me
 
-### LLM LLAMA 2
-One of the variants of LLAMA 2 named as **llama-2-7b-chat.ggmlv3.q8_0] is used for building a question answer system oriented towards local data.
-Two other variants of LLAMA 2 were also tested named **llama-2-7b-chat.ggmlv3.q3_K_M** and **llama-2-7b-chat.ggmlv3.q6_K**. But the above mentioned model was selected based on its performance.
+📫 Feel free to reach out to me at abdulhanankhan@web.de or connect with me on [LinkedIn](https://www.linkedin.com/in/abdul-hanan-khan-230a77228/).
 
-#### Important note!
-Due to the large size of models, I was not able to upload them on Git. Due to which, the folder "Models" is empty. However these models can be accessed/downloaded through [here](https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/tree/main). Make sure to place the model file into the "Models" folder (In GGML format).
-
-### Prompting LLM model
-Finally the LLM model was prompted with user queries/questions. The output of the model consisting of users question, model's generated answer as well as the source document is printed as well as stored in a .txt file named as "output.txt" in "model_results" folder.
-
-## References
-[LLAMA 2 documentation](https://ai.meta.com/llama/)
-
-[LLAMA 2 hugging face](https://huggingface.co/meta-llama/Llama-2-7b)
-
-[LLAMA 2 guide](https://huggingface.co/blog/stackllama#stackllama-a-hands-on-guide-to-train-llama-with-rlhf)
-
-[LLAMA 2 models](https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/tree/main)
-
-[C Transformers](https://python.langchain.com/docs/integrations/llms/ctransformers)
-
-[Sentence transformers](https://huggingface.co/sentence-transformers)
-
-[all-mpnet-base-v2](https://huggingface.co/sentence-transformers/all-mpnet-base-v2)
-
-[QA using a retreiver](https://python.langchain.com/docs/use_cases/question_answering/how_to/vector_db_qa)
-
-[Langchain](https://www.langchain.com/)
-
-[Langchain Documents](https://python.langchain.com/docs/modules/chains/document/)
-
-[FAISS semantic search](https://huggingface.co/learn/nlp-course/chapter5/6?fw=pt)
+Looking forward to collaborating on exciting data-driven projects!
+>>>>>>> parent of e96961d (- updated description)
