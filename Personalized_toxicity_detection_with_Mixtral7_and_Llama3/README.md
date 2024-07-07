@@ -46,9 +46,6 @@ In this project, we aim to improve the detection of toxic comments by personaliz
 ### Installation
 
 1. Install the required libraries:
-   ```bash
-   pip install -r requirements.txt
-   ```
 
 ### Running the Scripts
 
