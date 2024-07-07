@@ -1,0 +1,36 @@
+refreshed_on: 2024-06-04
+
+global_params:
+  data_mode: Full
+  keep_archive: True
+  dynamic_delta_date_calculation: True
+  delta_date_custom: 2024-05-01
+  full_date_custom: 2022-01-01
+  pdi_min_date: 2018-01-01
+
+eme_params:
+
+na_params:
+
+sa_params:
+  sa_dd_path: '/dbfs/mnt/datalake/analytics/nps_harmonized_sa/latest_11_06/'
+  sa_hist_w0_path: '/dbfs/mnt/datalake/analytics/nps_harmonized_sa/historical data/Wave0_full_2022_23 (Until September).xlsx'
+  sa_hist_w1_path: '/dbfs/mnt/datalake/analytics/nps_harmonized_sa/historical data/Wave1_full_2022_23 (Until September).xlsx'
+
+apa_params:
+
+compilation_params:
+
+predictions_params:
+  training_data_path: '/dbfs/mnt/datalake/analytics/CX_TextClassification/Training_dataset/Current_version/'
+  scoring_data_path: '/dbfs/mnt/datalake/analytics/CX_TextClassification/Scoring_dataset/Current_version/'
+  scoring_data_test_path: '/dbfs/mnt/datalake/analytics/CX_TextClassification/Scoring_dataset/test2_tmp/Current_version/'
+  model_name: 'distilbert-base-uncased'
+  model_path: '/dbfs/mnt/datalake/analytics/CX_TextClassification/Model/Current_version/'
+  load_model_fl: True
+  topic_hierarchy_path: '/dbfs/mnt/datalake/analytics/CX_TextClassification/Mapping/Current_version/'
+  context_mapping_path: '/dbfs/mnt/datalake/analytics/CX_TextClassification/Context_mapping/Current_version/'
+
+formatting_params:
+  keyword_validation_file: '/dbfs/mnt/datalake/analytics/CX_TextClassification/Validation_keywords/Current_version/predicted_data_top_keywords_filtered_13_5_2024.xlsx'
+  previous_result_file : '/dbfs/mnt/datalake/analytics/CX_TextClassification/Formated_Output/Archive/Farmers Insight - 2024Q2.xlsx'

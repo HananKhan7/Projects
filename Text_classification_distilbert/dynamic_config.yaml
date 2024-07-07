@@ -1,0 +1,3 @@
+formatting_params:
+  predicted_data_file: /dbfs/mnt/datalake/analytics/scoring_dataset/dump/predicted_data_context_Append_12_06_2024.csv
+refreshed_on: 2024-05-29
