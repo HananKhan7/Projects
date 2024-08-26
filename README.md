@@ -1,6 +1,6 @@
 Hi! :smile:
 
-Welcome to my data science portfolio. I'm Hanan, a passionate data scientist with almost 2 years of experience in leveraging data to extract insights and drive informed decisions using the power of ML algorithms.
+Welcome to my data science portfolio. I'm Hanan, a passionate data scientist with almost 4 years of experience in leveraging data to extract insights and drive informed decisions using the power of ML algorithms.
 
 ## About Me
 - 📊 Data scientist with a keen interest in natural language processing, machine learning, exploratory data analysis, and predictive modeling.
